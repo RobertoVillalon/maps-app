@@ -15,11 +15,9 @@ jobs:
         with:
           node-version: 20
 
-      # 1️⃣ Instalar dependencias
       - name: Instalar dependencias
         run: npm ci
 
-      # 2️⃣ Crear environment.ts
       - name: Crear environment.ts para Angular
         run: |
           mkdir -p src/environments
@@ -29,17 +27,12 @@ jobs:
           };
           EOL
 
-      # 3️⃣ Build Angular (ajusta el base-href según tu repo)
       - name: Build Angular
         run: npm run build -- --configuration production --base-href "/MapsApp/"
-        env:
-          MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
-
-      # 4️⃣ Copiar index.html a 404.html
+        
       - name: Copiar index.html a 404.html
         run: cp ./dist/08-maps-app/browser/index.html ./dist/08-maps-app/browser/404.html        
 
-      # 5️⃣ Deploy a GitHub Pages
       - name: Deploy a GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

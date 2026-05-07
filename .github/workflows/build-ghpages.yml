@@ -1,10 +1,12 @@
-name: Deploy Angular to GitHub Pages
+name: Deploy
 
 on:
   workflow_dispatch:
 permissions:
   contents: write
-
+env:
+  MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
+  
 jobs:
   deploy:
     uses: RobertoVillalon/infraestructura/.github/workflows/deployAngularToGithubPages.yml@main
@@ -15,5 +17,5 @@ jobs:
       environments_variables: |
         {
           production: true,
-          mapboxKey: '${{ secrets.MAPBOX_TOKEN }}'
+          mapboxKey: $MAPBOX_TOKEN
         }

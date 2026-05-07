@@ -17,5 +17,5 @@ jobs:
       environments_variables: |
         {
           production: true,
-          mapboxKey: $MAPBOX_TOKEN
+          mapboxKey: '$MAPBOX_TOKEN'
         }

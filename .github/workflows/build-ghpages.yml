@@ -28,7 +28,7 @@ jobs:
           EOL
 
       - name: Build Angular
-        run: npm run build -- --configuration production --base-href "/MapsApp/"
+        run: npm run build -- --configuration production --base-href "/maps-app/"
         
       - name: Copiar index.html a 404.html
         run: cp ./dist/08-maps-app/browser/index.html ./dist/08-maps-app/browser/404.html        

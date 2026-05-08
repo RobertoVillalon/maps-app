@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "08-maps-app": {
+    "maps-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -16,7 +16,7 @@
             "allowedCommonJsDependencies": [
               "mapbox-gl"
             ],
-            "outputPath": "dist/08-maps-app",
+            "outputPath": "dist/maps-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [

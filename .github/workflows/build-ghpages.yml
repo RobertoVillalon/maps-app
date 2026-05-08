@@ -12,8 +12,8 @@ jobs:
     uses: RobertoVillalon/infraestructura/.github/workflows/deployAngularToGithubPages.yml@main
     with:
       working_directory: "."
-      base_href: "/maps/"
-      publish_dir: "./dist/maps/browser"
+      base_href: "/maps-app/"
+      publish_dir: "./dist/maps-app/browser"
       environments_variables: |
         {
           production: true,

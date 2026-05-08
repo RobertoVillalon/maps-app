@@ -4,8 +4,6 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
-env:
-  MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
   
 jobs:
   deploy:
@@ -17,5 +15,5 @@ jobs:
       environments_variables: |
         {
           production: true,
-          mapboxKey: '$MAPBOX_TOKEN'
+          mapboxKey: MAPBOX_TOKEN
         }

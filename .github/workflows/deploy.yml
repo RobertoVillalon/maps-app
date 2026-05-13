@@ -8,6 +8,7 @@ permissions:
 jobs:
   deploy:
     uses: RobertoVillalon/infraestructura/.github/workflows/deployAngularToGithubPages.yml@main
+    secrets: inherit
     with:
       base_href: "/maps-app/"
       publish_dir: "./dist/maps-app/browser"

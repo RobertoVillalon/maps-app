@@ -8,7 +8,7 @@ import { HouseProperty, lngLat } from '../../../interfaces/houses.interfaces.';
   height: 260;
 */
 
-mapboxgl.accessToken = environment.mapboxKey;
+mapboxgl.accessToken = environment.MAPBOX_TOKEN;
 
 @Component({
   selector: 'app-mini-map',

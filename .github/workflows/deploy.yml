@@ -11,4 +11,4 @@ jobs:
     with:
       base_href: "/maps-app/"
       publish_dir: "./dist/maps-app/browser"
-      environments_variables: "MAPBOX_TOKEN"
+      environment_keys: "MAPBOX_TOKEN"

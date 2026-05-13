@@ -3,7 +3,7 @@ import mapboxgl from 'mapbox-gl';
 import { environment } from '../../../environments/environment';
 import { DecimalPipe, JsonPipe } from '@angular/common';
 
-mapboxgl.accessToken = environment.mapboxKey;
+mapboxgl.accessToken = environment.MAPBOX_TOKEN;
 
 @Component({
   selector: 'app-fullscreen-map-page',

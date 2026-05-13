@@ -4,7 +4,7 @@ import { environment } from '../../../environments/environment';
 import { v4 as UUIDv4} from 'uuid'
 import { DecimalPipe, JsonPipe } from '@angular/common';
 
-mapboxgl.accessToken = environment.mapboxKey;
+mapboxgl.accessToken = environment.MAPBOX_TOKEN;
 
 interface Marker {
   id: string,

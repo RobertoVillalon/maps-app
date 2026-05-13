@@ -9,11 +9,6 @@ jobs:
   deploy:
     uses: RobertoVillalon/infraestructura/.github/workflows/deployAngularToGithubPages.yml@main
     with:
-      working_directory: "."
       base_href: "/maps-app/"
       publish_dir: "./dist/maps-app/browser"
-      environments_variables: |
-        {
-          production: true,
-          mapboxKey: MAPBOX_TOKEN
-        }
+      environments_variables: "MAPBOX_TOKEN"
